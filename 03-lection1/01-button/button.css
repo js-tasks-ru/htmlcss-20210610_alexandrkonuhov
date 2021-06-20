@@ -1,56 +1,68 @@
 /* Стилизация кнопки */
-button {
-    border-radius: 8px;
-    width: 189px;
-    height: 66px;
-    padding: 5px 10px 8px 10px;
+
+.button {
+    border: none;
+    outline: none;
+
     display: inline-block;
-    cursor: pointer;
-    font-family: Roboto, sans-serif;
-    font-style: normal;
-    font-weight: 500;
+    border-radius: 8px;
+    padding: 15px 20px 14px;
+    text-align: center;
     font-size: 16px;
     line-height: 19px;
+    font-weight: 500;
+    cursor: pointer;
+    min-width: 182px;
 }
+
 .button:disabled {
     opacity: 0.5;
     cursor: default;
 }
-.button_primary{
+
+/* Primary */
+
+.button_primary {
     background: #4263EB;
-    color: var(--white);
+    color: #FFFFFF;
+
+    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 }
+
 .button_primary:hover {
-    background: var(--blue);
+    background: #2342C0;
 }
-.button_primary:hover:disabled{
+
+/* Возвращаем цвет на такой же, какой был у primary */
+.button_primary:hover:disabled {
     background: #4263EB;
 }
-.button_secondary{
-    background: var(--secondary);
-    color: var(--white);
+
+/* Secondary */
+
+.button_secondary {
+    background: #7048E8;
+    color: #FFFFFF;
+
+    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 }
-.button_secondary:hover{
+
+/* Альтернатива возвращению цвета */
+.button_secondary:hover:not(:disabled) {
     background: #5028C6;
 }
-.button_secondary:hover:disabled{
-    background: var(--secondary);
+
+/* Alternate */
+
+.button_alternate {
+    border: 1px solid #ACB5BD;
+    background: transparent;
+    color: #495057;
+
+    transition: border-color 0.2s ease-in-out;
 }
-.button_alternate{
-    color: var(--grey-4);
-    background: var(--white);
-    border: 1px solid var(--grey-3);
-    box-sizing: border-box;
-}
-.button_alternate:hover {
-    color: var(--grey-4);
-    background: var(--white);
-    border: 1px solid var(--black);
-    box-sizing: border-box;
-}
-.button_alternate:hover:disabled{
-    color: var(--grey-4);
-    background: var(--white);
-    border: 1px solid var(--grey-3);
-    box-sizing: border-box;
+
+/* Альтернатива возвращению цвета */
+.button_alternate:hover:not(:disabled) {
+    border-color: #212429;
 }

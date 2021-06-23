@@ -1,0 +1,17 @@
+.header{
+    padding: 32px 0 76px;
+    border-bottom: 1px solid var(--grey-2);
+}
+.header__title{
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 64px;
+    color: var(--black)
+}
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

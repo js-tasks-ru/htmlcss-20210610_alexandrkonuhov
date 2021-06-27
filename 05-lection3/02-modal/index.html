@@ -2,11 +2,30 @@
 <!-- Страница с модалкой -->
 <html lang="ru">
     <head>
+        <meta charset='UTF-8'>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./modal.css">
         <title>Modal</title>
     </head>
     <body>
+    <div class='modal-container'>
+    <button id="modal-open" class="button" title='Войти'>
+       Sign in
+    </button>
+        <div id="modal">
+    <form action=''  class='modal'>
+        <div class='modal__group '>
+            <label for='name' class='modal__group_label'>NAME</label>
+            <input id='name' type='text' class='modal__group_input'>
+        </div>
+        <div class='modal__group'>
+            <label for='email' class='modal__group_label'>EMAIL</label>
+            <input id='email' type='email' class='modal__group_input'>
+        </div>
+        <div class='modal__group'>
+            <button id="modal-close" class='button'>Submit</button>
+        </div>
+    </form></div></div>
     </body>
     <script src="./index.js"></script> 
 </html>

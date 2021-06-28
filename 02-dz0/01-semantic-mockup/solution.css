@@ -1,0 +1,40 @@
+header {
+    background: #F03D3E;
+    text-align: center;
+}
+nav {
+    background: #FFA500;
+    font-size: 20px;
+    margin-bottom:10px;
+    padding: 30px;
+    white-space: pre;
+}
+h1 {
+    font-size: 60px;
+    font-family: "Arial", sans-serif;
+    color: #F8F9FA;
+}
+main {
+    background: green;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: -20px;
+}
+article {
+    margin-left: 30px;
+    margin-right: 30px;
+    background: #374FC7;
+    font-size: 20px;
+    font-family: "Verdana", sans-serif;
+    color: yellow;
+}
+footer {
+    background: #9955ff;
+    text-align: center;
+    font-size: 40px;
+    font-family: "Arial", sans-serif;
+    color: #F8F9FA;
+}
+a {
+    text-decoration: underline;
+}

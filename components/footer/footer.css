@@ -17,5 +17,8 @@
     line-height: 24px;
     width: 640px;
     text-align: center;
+}
+.footer__box{
     margin:0 auto;
+    width:640px;
 }

@@ -1,29 +1,28 @@
-.hist-box {
+.histogram{
     width: 354px;
     height: 185px;
-    border: 1px solid #ACB5BD;
+    border: 1px solid var(--grey-3);
     box-sizing: border-box;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
-    justify-content:space-around;
     padding: 24px;
 }
-.histogram {
+.histogram__columns {
     display: flex;
     align-items:flex-end;
-    justify-content: space-between;
 }
-.column {
-    background-color: #4263EB;
-    flex-basis:9px;
+.histogram__column {
+    background-color:var(--bluelink);
+    flex-grow: 1;
+    margin-right: 1px;
 }
-.hist-header{
+.histogram__header{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.hist-header__orders{
+.histogram__orders{
     flex-basis: 80%;
     font-size: 16px;
     line-height: 24px;
@@ -33,17 +32,16 @@
     color:var(--black);
     opacity: 0.8;
 }
-.hist-header__link{
-    flex-basis: 20%;
+.histogram__link{
     font-family: 'Inter',sans-serif ;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
-    color: #4263EB;
+    color:var(--bluelink);
     text-decoration: none;
 }
-.hist-header__quantity{
+.histogram__quantity{
     font-family: 'Inter',sans-serif ;
     font-style: normal;
     font-weight: normal;

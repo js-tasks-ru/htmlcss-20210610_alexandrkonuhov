@@ -1,4 +1,4 @@
-.skeleton-box{
+.skeleton{
     display:flex;
     width:579px; height:192px;
     border: 1px solid var(--grey-3);

@@ -1,8 +1,16 @@
 .page__box {
-    width: 1110px;
+    max-width: 1110px;
+    width:100%;
     margin: 0 auto;
 }
+@media screen and (max-width: 768px){
+    .page__box {
+        max-width: 1110px;
+        width:100%;
+        margin: 0 auto;
+        padding:0 16px;
+    }
+}
 .page__main {
-    background: #F9FAFC;
-    height: 1036px;
+    background: var(--page-background);
 }

@@ -30,14 +30,18 @@
     transition:opacity 200ms ease-in-out, background 200ms ease-in-out;
 }
 .modal{
-    width:428px;
-    height:318px;
+    max-width:400px;
+    width:100%;
     position:fixed;
     border-radius:8px;
     display:flex;
     flex-direction:column;
     justify-content:space-around;
     background:var(--white);
+}
+.modal_preview{
+    border: 1px solid var(--grey-3);
+    position:relative;
 }
 .modal__group{
     display:flex;
@@ -58,7 +62,7 @@
 }
 .modal__group_input{
     background:var(--white);
-    border:1px solid #DDE2E5;
+    border:1px solid var(--grey-2);
     box-sizing:border-box;
     border-radius:8px;
     height:56px;

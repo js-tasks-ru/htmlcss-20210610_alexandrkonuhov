@@ -4,7 +4,7 @@
 }
 .tooltip__triger{
     cursor:pointer;
-    padding-top:120px;
+    /*padding-top:120px;*/
 }
 .tooltip__triger:hover~.tooltip__menu{
     display:block;
@@ -29,7 +29,8 @@
     border-top:6px solid var(--bluelink);
     position:absolute;
     left:50%;
-    transform:translate(-50%, 39%);
+    top:0;
+    transform: translate(-50%,225%);
 }
 .tooltip__menu_inner{
     margin-left:21px;

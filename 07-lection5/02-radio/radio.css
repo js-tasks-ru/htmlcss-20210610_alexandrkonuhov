@@ -42,10 +42,6 @@
     transform:translate(-50%,-50%);
     display:none;
 }
-.form-radio{
-    display:grid;
-    grid-gap: 1rem;
-}
 .radio__input:checked ~ .radio__state .radio__control{
     border:2px solid var(--primary);
 }

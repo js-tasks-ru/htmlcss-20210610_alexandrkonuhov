@@ -48,8 +48,8 @@
     flex-direction:column;
 }
 .checkbox__input:checked ~ .checkbox__state .checkbox__control{
-    background:#4263EB;
-    border-color:#4263EB;
+    background:var(--primary);
+    border-color:var(--primary);
 }
 .checkbox__input:checked ~ .checkbox__state .checkbox__icon{
     display:block;

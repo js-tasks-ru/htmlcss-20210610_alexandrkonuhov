@@ -28,7 +28,7 @@
     font-weight:normal;
     font-size:16px;
     line-height:24px;
-    color:#495057;
+    color:var(--grey-4);
     margin-left:12px;
 }
 .toggle__icon{
@@ -41,13 +41,9 @@
     left:28%;
     transform:translate(-50%,-50%);
 }
-.form-toggle{
-    display:grid;
-    grid-gap: 1rem;
-}
 .toggle__input:checked ~ .toggle__state .toggle__control{
-    border:2px solid #4263EB;
-    background: #4263EB;
+    border:2px solid var(--primary);
+    background: var(--primary);
 }
 .toggle__input:checked ~ .toggle__state .toggle__icon{
     display:block;

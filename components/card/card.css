@@ -28,3 +28,12 @@
     color:var(--black);
     margin:0;/**/
 }
+.card__columns{
+    display:grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 1rem;
+}
+.card__column{
+    display:grid;
+    grid-gap:1rem;
+}

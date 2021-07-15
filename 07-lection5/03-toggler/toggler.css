@@ -37,9 +37,9 @@
     background:var(--grey-2);
     border-radius:50%;
     position:absolute;
-    top:50%;
-    left:28%;
-    transform:translate(-50%,-50%);
+    top:0;
+    left:0;
+    transition:transform 200ms ease-in-out;
 }
 .toggle__input:checked ~ .toggle__state .toggle__control{
     border:2px solid var(--primary);
@@ -47,8 +47,8 @@
 }
 .toggle__input:checked ~ .toggle__state .toggle__icon{
     display:block;
-    left:73%;
-    background:var(--white)
+    transform:translateX(100%);
+    background:var(--white);
 }
 .toggle__input:disabled ~ .toggle__state .toggle__control{
     background:var(--grey-2);

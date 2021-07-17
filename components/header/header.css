@@ -1,6 +1,5 @@
 .header{
-    padding: 32px 0 76px;
-    border-bottom: 1px solid var(--grey-2);
+    padding: 32px 0;
 }
 .header__title{
     font-family: Inter, sans-serif;
@@ -14,4 +13,25 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.header__burger-button{
+    display:none;
+    border:none;
+    background-color:var(--white);
+    position:absolute;
+    left:0;
+    cursor:pointer;
+}
+@media screen and (max-width: 768px){
+    .header__title {
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 1.28;
+    }
+    .header__container{
+        justify-content: center;
+    }
+    .header__burger-button{
+        display:inline-block;
+    }
 }
